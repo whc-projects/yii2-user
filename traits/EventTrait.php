@@ -9,19 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\traits;
+namespace whc\user\traits;
 
-use dektrium\user\events\AuthEvent;
-use dektrium\user\events\ConnectEvent;
-use dektrium\user\events\FormEvent;
-use dektrium\user\events\ProfileEvent;
-use dektrium\user\events\ResetPasswordEvent;
-use dektrium\user\events\UserEvent;
-use dektrium\user\models\Account;
-use dektrium\user\models\Profile;
-use dektrium\user\models\RecoveryForm;
-use dektrium\user\models\Token;
-use dektrium\user\models\User;
+use whc\user\events\AuthEvent;
+use whc\user\events\ConnectEvent;
+use whc\user\events\FormEvent;
+use whc\user\events\ProfileEvent;
+use whc\user\events\ResetPasswordEvent;
+use whc\user\events\UserEvent;
+use whc\user\models\Account;
+use whc\user\models\Profile;
+use whc\user\models\RecoveryForm;
+use whc\user\models\Token;
+use whc\user\models\User;
 use yii\authclient\ClientInterface;
 use yii\base\Model;
 

@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\events;
+namespace whc\user\events;
 
-use dektrium\user\models\User;
-use dektrium\user\models\Account;
+use whc\user\models\User;
+use whc\user\models\Account;
 use yii\base\Event;
 
 /**

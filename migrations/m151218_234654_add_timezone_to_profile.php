@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-use dektrium\user\migrations\Migration;
+use whc\user\migrations\Migration;
 
 class m151218_234654_add_timezone_to_profile extends Migration
 {

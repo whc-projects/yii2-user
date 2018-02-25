@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\events;
+namespace whc\user\events;
 
-use dektrium\user\models\Profile;
+use whc\user\models\Profile;
 use yii\base\Event;
 
 /**

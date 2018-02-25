@@ -181,7 +181,7 @@ with the name provided via facebook:
 // plase this code somewhere in your config files (bootstrap.php in case of using advanced app template, web.php in case
 // of using basic app template
 
-use dektrium\user\controllers\SecurityController; 
+use whc\user\controllers\SecurityController; 
 
 Event::on(SecurityController::class, SecurityController::EVENT_AFTER_AUTHENTICATE, function (AuthEvent $e) {
     // if user account was not created we should not continue

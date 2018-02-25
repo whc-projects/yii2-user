@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\controllers;
+namespace whc\user\controllers;
 
-use dektrium\user\Finder;
-use dektrium\user\models\Account;
-use dektrium\user\models\LoginForm;
-use dektrium\user\models\User;
-use dektrium\user\Module;
-use dektrium\user\traits\AjaxValidationTrait;
-use dektrium\user\traits\EventTrait;
+use whc\user\Finder;
+use whc\user\models\Account;
+use whc\user\models\LoginForm;
+use whc\user\models\User;
+use whc\user\Module;
+use whc\user\traits\AjaxValidationTrait;
+use whc\user\traits\EventTrait;
 use yii\authclient\AuthAction;
 use yii\authclient\ClientInterface;
 use yii\filters\AccessControl;

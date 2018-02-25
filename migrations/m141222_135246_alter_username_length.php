@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-use dektrium\user\migrations\Migration;
+use whc\user\migrations\Migration;
 
 class m141222_135246_alter_username_length extends Migration
 {

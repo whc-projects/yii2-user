@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace whc\user\models;
 
-use dektrium\user\Finder;
+use whc\user\Finder;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;

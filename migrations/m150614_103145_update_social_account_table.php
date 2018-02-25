@@ -1,7 +1,7 @@
 <?php
 
 use yii\db\Query;
-use dektrium\user\migrations\Migration;
+use whc\user\migrations\Migration;
 
 class m150614_103145_update_social_account_table extends Migration
 {

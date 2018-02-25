@@ -9,7 +9,7 @@ Assume you decided to override user class and change registration process. Letâ€
 ```php
 namespace app\models;
 
-use dektrium\user\models\User as BaseUser;
+use whc\user\models\User as BaseUser;
 
 class User extends BaseUser
 {

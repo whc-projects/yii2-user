@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user;
+namespace whc\user;
 
-use dektrium\user\models\Token;
-use dektrium\user\models\User;
+use whc\user\models\Token;
+use whc\user\models\User;
 use Yii;
 use yii\base\Component;
 

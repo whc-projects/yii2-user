@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\controllers;
+namespace whc\user\controllers;
 
-use dektrium\user\Finder;
-use dektrium\user\models\RegistrationForm;
-use dektrium\user\models\ResendForm;
-use dektrium\user\models\User;
-use dektrium\user\traits\AjaxValidationTrait;
-use dektrium\user\traits\EventTrait;
+use whc\user\Finder;
+use whc\user\models\RegistrationForm;
+use whc\user\models\ResendForm;
+use whc\user\models\User;
+use whc\user\traits\AjaxValidationTrait;
+use whc\user\traits\EventTrait;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;

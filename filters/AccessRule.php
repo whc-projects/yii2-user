@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\filters;
+namespace whc\user\filters;
 
 /**
  * Access rule class for simpler RBAC.

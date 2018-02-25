@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\clients;
+namespace whc\user\clients;
 
 use Yii;
 use yii\authclient\clients\VKontakte as BaseVKontakte;

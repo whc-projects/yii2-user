@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-use dektrium\rbac\widgets\Assignments;
+use whc\rbac\widgets\Assignments;
 
 /**
  * @var yii\web\View $this

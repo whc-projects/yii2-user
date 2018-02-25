@@ -10,7 +10,7 @@
  */
 
 use yii\helpers\Html;
-use dektrium\user\helpers\Timezone;
+use whc\user\helpers\Timezone;
 use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 

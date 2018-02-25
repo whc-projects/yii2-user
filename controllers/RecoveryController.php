@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\controllers;
+namespace whc\user\controllers;
 
-use dektrium\user\Finder;
-use dektrium\user\models\RecoveryForm;
-use dektrium\user\models\Token;
-use dektrium\user\traits\AjaxValidationTrait;
-use dektrium\user\traits\EventTrait;
+use whc\user\Finder;
+use whc\user\models\RecoveryForm;
+use whc\user\models\Token;
+use whc\user\traits\AjaxValidationTrait;
+use whc\user\traits\EventTrait;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;

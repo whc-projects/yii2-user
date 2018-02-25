@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\controllers;
+namespace whc\user\controllers;
 
-use dektrium\user\Finder;
+use whc\user\Finder;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;

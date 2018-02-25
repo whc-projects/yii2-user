@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-use dektrium\user\migrations\Migration;
+use whc\user\migrations\Migration;
 
 /**
  * @author Dmitry Erofeev <dmeroff@gmail.com>

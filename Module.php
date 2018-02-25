@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user;
+namespace whc\user;
 
 use yii\base\Module as BaseModule;
 

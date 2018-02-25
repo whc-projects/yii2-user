@@ -10,8 +10,8 @@ use tests\_pages\RecoveryPage;
 use tests\_pages\LoginPage;
 use yii\helpers\Html;
 use yii\helpers\Url;
-use dektrium\user\models\User;
-use dektrium\user\models\Token;
+use whc\user\models\User;
+use whc\user\models\Token;
 
 $I = new FunctionalTester($scenario);
 $I->wantTo('ensure that password recovery works');

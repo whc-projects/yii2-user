@@ -9,9 +9,9 @@ Let's start with overriding the registration form model:
 ```php
 namespace app\models;
 
-use dektrium\user\models\Profile;
-use dektrium\user\models\RegistrationForm as BaseRegistrationForm;
-use dektrium\user\models\User;
+use whc\user\models\Profile;
+use whc\user\models\RegistrationForm as BaseRegistrationForm;
+use whc\user\models\User;
 
 class RegistrationForm extends BaseRegistrationForm
 {

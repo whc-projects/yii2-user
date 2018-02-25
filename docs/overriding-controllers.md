@@ -18,7 +18,7 @@ it from `dektrium\user\controllers\AdminController`:
 ```php
 namespace app\controllers\user;
 
-use dektrium\user\controllers\AdminController as BaseAdminController;
+use whc\user\controllers\AdminController as BaseAdminController;
 
 class AdminController extends BaseAdminController
 {

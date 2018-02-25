@@ -1,8 +1,8 @@
 <?php
 
-namespace dektrium\user\traits;
+namespace whc\user\traits;
 
-use dektrium\user\Module;
+use whc\user\Module;
 
 /**
  * Trait ModuleTrait

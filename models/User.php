@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace whc\user\models;
 
-use dektrium\user\Finder;
-use dektrium\user\helpers\Password;
-use dektrium\user\Mailer;
-use dektrium\user\Module;
-use dektrium\user\traits\ModuleTrait;
+use whc\user\Finder;
+use whc\user\helpers\Password;
+use whc\user\Mailer;
+use whc\user\Module;
+use whc\user\traits\ModuleTrait;
 use yii\base\NotSupportedException;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;

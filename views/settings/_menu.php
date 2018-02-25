@@ -10,7 +10,7 @@
  */
 
 use yii\helpers\Html;
-use dektrium\user\widgets\UserMenu;
+use whc\user\widgets\UserMenu;
 
 /**
  * @var dektrium\user\models\User $user
