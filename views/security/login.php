@@ -16,8 +16,8 @@ use yii\widgets\ActiveForm;
 
 /**
  * @var yii\web\View $this
- * @var dektrium\user\models\LoginForm $model
- * @var dektrium\user\Module $module
+ * @var whc\user\models\LoginForm $model
+ * @var whc\user\Module $module
  */
 
 $this->title = Yii::t('user', 'Sign in');

@@ -12,7 +12,7 @@ Yii2-user can be installed using composer. Run following command to download and
 install Yii2-user:
 
 ```bash
-composer require dektrium/yii2-user
+composer require whc-projects/yii2-user
 ```
 
 ### 2. Configure
@@ -24,7 +24,7 @@ Add following lines to your main configuration file:
 ```php
 'modules' => [
     'user' => [
-        'class' => 'dektrium\user\Module',
+        'class' => 'whc\user\Module',
     ],
 ],
 ```

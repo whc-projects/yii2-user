@@ -40,49 +40,49 @@ class SecurityController extends Controller
 
     /**
      * Event is triggered before logging user in.
-     * Triggered with \dektrium\user\events\FormEvent.
+     * Triggered with \whc\user\events\FormEvent.
      */
     const EVENT_BEFORE_LOGIN = 'beforeLogin';
 
     /**
      * Event is triggered after logging user in.
-     * Triggered with \dektrium\user\events\FormEvent.
+     * Triggered with \whc\user\events\FormEvent.
      */
     const EVENT_AFTER_LOGIN = 'afterLogin';
 
     /**
      * Event is triggered before logging user out.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \whc\user\events\UserEvent.
      */
     const EVENT_BEFORE_LOGOUT = 'beforeLogout';
 
     /**
      * Event is triggered after logging user out.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \whc\user\events\UserEvent.
      */
     const EVENT_AFTER_LOGOUT = 'afterLogout';
 
     /**
      * Event is triggered before authenticating user via social network.
-     * Triggered with \dektrium\user\events\AuthEvent.
+     * Triggered with \whc\user\events\AuthEvent.
      */
     const EVENT_BEFORE_AUTHENTICATE = 'beforeAuthenticate';
 
     /**
      * Event is triggered after authenticating user via social network.
-     * Triggered with \dektrium\user\events\AuthEvent.
+     * Triggered with \whc\user\events\AuthEvent.
      */
     const EVENT_AFTER_AUTHENTICATE = 'afterAuthenticate';
 
     /**
      * Event is triggered before connecting social network account to user.
-     * Triggered with \dektrium\user\events\AuthEvent.
+     * Triggered with \whc\user\events\AuthEvent.
      */
     const EVENT_BEFORE_CONNECT = 'beforeConnect';
 
     /**
      * Event is triggered before connecting social network account to user.
-     * Triggered with \dektrium\user\events\AuthEvent.
+     * Triggered with \whc\user\events\AuthEvent.
      */
     const EVENT_AFTER_CONNECT = 'afterConnect';
 

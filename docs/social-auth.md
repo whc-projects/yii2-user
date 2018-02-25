@@ -42,7 +42,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'facebook' => [
-    'class'        => 'dektrium\user\clients\Facebook',
+    'class'        => 'whc\user\clients\Facebook',
     'clientId'     => 'APP_ID',
     'clientSecret' => 'APP_SECRET',
 ],
@@ -56,7 +56,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'twitter' => [
-    'class'          => 'dektrium\user\clients\Twitter',
+    'class'          => 'whc\user\clients\Twitter',
     'consumerKey'    => 'CONSUMER_KEY',
     'consumerSecret' => 'CONSUMER_SECRET',
 ],
@@ -65,7 +65,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'twitter' => [
-    'class'          => 'dektrium\user\clients\Twitter',
+    'class'          => 'whc\user\clients\Twitter',
     'consumerKey'    => 'CONSUMER_KEY',
     'consumerSecret' => 'CONSUMER_SECRET',
     'attributeParams' => [
@@ -84,7 +84,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'google' => [
-    'class'        => 'dektrium\user\clients\Google',
+    'class'        => 'whc\user\clients\Google',
     'clientId'     => 'CLIENT_ID',
     'clientSecret' => 'CLIENT_SECRET',
 ],
@@ -96,7 +96,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'github' => [
-    'class'        => 'dektrium\user\clients\GitHub',
+    'class'        => 'whc\user\clients\GitHub',
     'clientId'     => 'CLIENT_ID',
     'clientSecret' => 'CLIENT_SECRET',
 ],
@@ -108,7 +108,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'vkontakte' => [
-    'class'        => 'dektrium\user\clients\VKontakte',
+    'class'        => 'whc\user\clients\VKontakte',
     'clientId'     => 'CLIENT_ID',
     'clientSecret' => 'CLIENT_SECRET',
 ]
@@ -122,7 +122,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'yandex' => [
-    'class'        => 'dektrium\user\clients\Yandex',
+    'class'        => 'whc\user\clients\Yandex',
     'clientId'     => 'CLIENT_ID',
     'clientSecret' => 'CLIENT_SECRET'
 ],
@@ -134,7 +134,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'linkedin' => [
-    'class'        => 'dektrium\user\clients\LinkedIn',
+    'class'        => 'whc\user\clients\LinkedIn',
     'clientId'     => 'CLIENT_ID',
     'clientSecret' => 'CLIENT_SECRET'
 ],
@@ -154,17 +154,17 @@ The following config allows to log in using 3 networks (Twitter, Facebook and Go
     'class' => yii\authclient\Collection::className(),
     'clients' => [
         'facebook' => [
-            'class'        => 'dektrium\user\clients\Facebook',
+            'class'        => 'whc\user\clients\Facebook',
             'clientId'     => 'CLIENT_ID',
             'clientSecret' => 'CLIENT_SECRET',
         ],
         'twitter' => [
-            'class'          => 'dektrium\user\clients\Twitter',
+            'class'          => 'whc\user\clients\Twitter',
             'consumerKey'    => 'CONSUMER_KEY',
             'consumerSecret' => 'CONSUMER_SECRET',
         ],
         'google' => [
-            'class'        => 'dektrium\user\clients\Google',
+            'class'        => 'whc\user\clients\Google',
             'clientId'     => 'CLIENT_ID',
             'clientSecret' => 'CLIENT_SECRET',
         ],

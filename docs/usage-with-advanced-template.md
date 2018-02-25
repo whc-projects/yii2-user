@@ -13,7 +13,7 @@ Let's start with defining module in `@common/config/main.php`:
 ```php
 'modules' => [
     'user' => [
-        'class' => 'dektrium\user\Module',
+        'class' => 'whc\user\Module',
         // you will configure your module inside this file
         // or if need different configuration for frontend and backend you may
         // configure in needed configs
@@ -27,7 +27,7 @@ Restrict access to admin controller from frontend. Open `@frontend/config/main.p
 'modules' => [
     'user' => [
         // following line will restrict access to admin controller from frontend application
-        'as frontend' => 'dektrium\user\filters\FrontendFilter',
+        'as frontend' => 'whc\user\filters\FrontendFilter',
     ],
 ],
 ```
@@ -38,7 +38,7 @@ Restrict access to profile, recovery, registration and settings controllers from
 'modules' => [
     'user' => [
         // following line will restrict access to profile, recovery, registration and settings controllers from backend
-        'as backend' => 'dektrium\user\filters\BackendFilter',
+        'as backend' => 'whc\user\filters\BackendFilter',
     ],
 ],
 ```

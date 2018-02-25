@@ -19,7 +19,7 @@ use yii\helpers\Console;
 /**
  * Updates user's password.
  *
- * @property \dektrium\user\Module $module
+ * @property \whc\user\Module $module
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */

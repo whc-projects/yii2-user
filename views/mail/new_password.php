@@ -12,9 +12,9 @@
 use yii\helpers\Html;
 
 /**
- * @var dektrium\user\Module          $module
- * @var dektrium\user\models\User     $user
- * @var dektrium\user\models\Password $password
+ * @var whc\user\Module          $module
+ * @var whc\user\models\User     $user
+ * @var whc\user\models\Password $password
  */
 
 ?>

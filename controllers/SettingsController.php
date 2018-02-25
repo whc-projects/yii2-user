@@ -27,7 +27,7 @@ use yii\web\NotFoundHttpException;
 /**
  * SettingsController manages updating user settings (e.g. profile, email and password).
  *
- * @property \dektrium\user\Module $module
+ * @property \whc\user\Module $module
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */
@@ -38,61 +38,61 @@ class SettingsController extends Controller
 
     /**
      * Event is triggered before updating user's profile.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \whc\user\events\UserEvent.
      */
     const EVENT_BEFORE_PROFILE_UPDATE = 'beforeProfileUpdate';
 
     /**
      * Event is triggered after updating user's profile.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \whc\user\events\UserEvent.
      */
     const EVENT_AFTER_PROFILE_UPDATE = 'afterProfileUpdate';
 
     /**
      * Event is triggered before updating user's account settings.
-     * Triggered with \dektrium\user\events\FormEvent.
+     * Triggered with \whc\user\events\FormEvent.
      */
     const EVENT_BEFORE_ACCOUNT_UPDATE = 'beforeAccountUpdate';
 
     /**
      * Event is triggered after updating user's account settings.
-     * Triggered with \dektrium\user\events\FormEvent.
+     * Triggered with \whc\user\events\FormEvent.
      */
     const EVENT_AFTER_ACCOUNT_UPDATE = 'afterAccountUpdate';
 
     /**
      * Event is triggered before changing users' email address.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \whc\user\events\UserEvent.
      */
     const EVENT_BEFORE_CONFIRM = 'beforeConfirm';
 
     /**
      * Event is triggered after changing users' email address.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \whc\user\events\UserEvent.
      */
     const EVENT_AFTER_CONFIRM = 'afterConfirm';
 
     /**
      * Event is triggered before disconnecting social account from user.
-     * Triggered with \dektrium\user\events\ConnectEvent.
+     * Triggered with \whc\user\events\ConnectEvent.
      */
     const EVENT_BEFORE_DISCONNECT = 'beforeDisconnect';
 
     /**
      * Event is triggered after disconnecting social account from user.
-     * Triggered with \dektrium\user\events\ConnectEvent.
+     * Triggered with \whc\user\events\ConnectEvent.
      */
     const EVENT_AFTER_DISCONNECT = 'afterDisconnect';
 
     /**
      * Event is triggered before deleting user's account.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \whc\user\events\UserEvent.
      */
     const EVENT_BEFORE_DELETE = 'beforeDelete';
 
     /**
      * Event is triggered after deleting user's account.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \whc\user\events\UserEvent.
      */
     const EVENT_AFTER_DELETE = 'afterDelete';
 

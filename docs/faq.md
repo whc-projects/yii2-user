@@ -7,10 +7,10 @@ You can change controller's layout using `controllerMap` module's property:
 ```php
 'modules' => [
     'user' => [
-        'class' => 'dektrium\user\Module',
+        'class' => 'whc\user\Module',
         'controllerMap' => [
             'admin' => [
-                'class'  => 'dektrium\user\controllers\AdminController',
+                'class'  => 'whc\user\controllers\AdminController',
                 'layout' => '//admin-layout',
             ],
         ],
@@ -39,8 +39,8 @@ use yii\widgets\ActiveForm;
 
 /**
  * @var yii\web\View              $this
- * @var dektrium\user\models\User $user
- * @var dektrium\user\Module      $module
+ * @var whc\user\models\User $user
+ * @var whc\user\Module      $module
  */
 
 $this->title = Yii::t('user', 'Sign up');

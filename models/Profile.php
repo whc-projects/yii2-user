@@ -33,7 +33,7 @@ use yii\db\ActiveRecord;
 class Profile extends ActiveRecord
 {
     use ModuleTrait;
-    /** @var \dektrium\user\Module */
+    /** @var \whc\user\Module */
     protected $module;
 
     /** @inheritdoc */

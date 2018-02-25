@@ -23,7 +23,7 @@ use yii\web\NotFoundHttpException;
 /**
  * RecoveryController manages password recovery process.
  *
- * @property \dektrium\user\Module $module
+ * @property \whc\user\Module $module
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */
@@ -34,37 +34,37 @@ class RecoveryController extends Controller
 
     /**
      * Event is triggered before requesting password reset.
-     * Triggered with \dektrium\user\events\FormEvent.
+     * Triggered with \whc\user\events\FormEvent.
      */
     const EVENT_BEFORE_REQUEST = 'beforeRequest';
 
     /**
      * Event is triggered after requesting password reset.
-     * Triggered with \dektrium\user\events\FormEvent.
+     * Triggered with \whc\user\events\FormEvent.
      */
     const EVENT_AFTER_REQUEST = 'afterRequest';
 
     /**
      * Event is triggered before validating recovery token.
-     * Triggered with \dektrium\user\events\ResetPasswordEvent. May not have $form property set.
+     * Triggered with \whc\user\events\ResetPasswordEvent. May not have $form property set.
      */
     const EVENT_BEFORE_TOKEN_VALIDATE = 'beforeTokenValidate';
 
     /**
      * Event is triggered after validating recovery token.
-     * Triggered with \dektrium\user\events\ResetPasswordEvent. May not have $form property set.
+     * Triggered with \whc\user\events\ResetPasswordEvent. May not have $form property set.
      */
     const EVENT_AFTER_TOKEN_VALIDATE = 'afterTokenValidate';
 
     /**
      * Event is triggered before resetting password.
-     * Triggered with \dektrium\user\events\ResetPasswordEvent.
+     * Triggered with \whc\user\events\ResetPasswordEvent.
      */
     const EVENT_BEFORE_RESET = 'beforeReset';
 
     /**
      * Event is triggered after resetting password.
-     * Triggered with \dektrium\user\events\ResetPasswordEvent.
+     * Triggered with \whc\user\events\ResetPasswordEvent.
      */
     const EVENT_AFTER_RESET = 'afterReset';
 

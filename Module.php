@@ -3,7 +3,7 @@
 /*
  * This file is part of the Dektrium project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Dektrium project <http://github.com/whc/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.

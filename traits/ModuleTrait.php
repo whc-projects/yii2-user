@@ -8,7 +8,7 @@ use whc\user\Module;
  * Trait ModuleTrait
  *
  * @property-read Module $module
- * @package dektrium\user\traits
+ * @package whc\user\traits
  */
 trait ModuleTrait
 {

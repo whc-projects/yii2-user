@@ -3,7 +3,7 @@
 /*
  * This file is part of the Dektrium project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Dektrium project <http://github.com/whc/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -27,16 +27,16 @@ class Bootstrap implements BootstrapInterface
 {
     /** @var array Model's map */
     private $_modelMap = [
-        'User'             => 'dektrium\user\models\User',
-        'Account'          => 'dektrium\user\models\Account',
-        'Profile'          => 'dektrium\user\models\Profile',
-        'Token'            => 'dektrium\user\models\Token',
-        'RegistrationForm' => 'dektrium\user\models\RegistrationForm',
-        'ResendForm'       => 'dektrium\user\models\ResendForm',
-        'LoginForm'        => 'dektrium\user\models\LoginForm',
-        'SettingsForm'     => 'dektrium\user\models\SettingsForm',
-        'RecoveryForm'     => 'dektrium\user\models\RecoveryForm',
-        'UserSearch'       => 'dektrium\user\models\UserSearch',
+        'User'             => 'whc\user\models\User',
+        'Account'          => 'whc\user\models\Account',
+        'Profile'          => 'whc\user\models\Profile',
+        'Token'            => 'whc\user\models\Token',
+        'RegistrationForm' => 'whc\user\models\RegistrationForm',
+        'ResendForm'       => 'whc\user\models\ResendForm',
+        'LoginForm'        => 'whc\user\models\LoginForm',
+        'SettingsForm'     => 'whc\user\models\SettingsForm',
+        'RecoveryForm'     => 'whc\user\models\RecoveryForm',
+        'UserSearch'       => 'whc\user\models\UserSearch',
     ];
 
     /** @inheritdoc */
@@ -47,7 +47,7 @@ class Bootstrap implements BootstrapInterface
         if ($app->hasModule('user') && ($module = $app->getModule('user')) instanceof Module) {
             $this->_modelMap = array_merge($this->_modelMap, $module->modelMap);
             foreach ($this->_modelMap as $name => $definition) {
-                $class = "dektrium\\user\\models\\" . $name;
+                $class = "whc\\user\\models\\" . $name;
                 Yii::$container->set($class, $definition);
                 $modelName = is_array($definition) ? $definition['class'] : $definition;
                 $module->modelMap[$name] = $modelName;
@@ -66,7 +66,7 @@ class Bootstrap implements BootstrapInterface
             ]);
 
             if ($app instanceof ConsoleApplication) {
-                $module->controllerNamespace = 'dektrium\user\commands';
+                $module->controllerNamespace = 'whc\user\commands';
             } else {
                 Yii::$container->set('yii\web\User', [
                     'enableAutoLogin' => true,
@@ -103,7 +103,7 @@ class Bootstrap implements BootstrapInterface
                 ];
             }
 
-            Yii::$container->set('dektrium\user\Mailer', $module->mailer);
+            Yii::$container->set('whc\user\Mailer', $module->mailer);
 
             $module->debug = $this->ensureCorrectDebugSetting();
         }

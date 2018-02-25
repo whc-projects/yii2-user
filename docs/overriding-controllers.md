@@ -13,7 +13,7 @@ First of all you should create new controller under your own namespace (it is re
 and extend it from the controller you want to override.
 
 For example, if you want to override AdminController you should create `app\controllers\user\AdminController` and extend
-it from `dektrium\user\controllers\AdminController`:
+it from `whc\user\controllers\AdminController`:
 
 ```php
 namespace app\controllers\user;
@@ -38,7 +38,7 @@ To let Yii2-user know about your controller, you should add it to the module's c
 'modules' => [
     ...
     'user' => [
-        'class' => 'dektrium\user\Module',
+        'class' => 'whc\user\Module',
         'controllerMap' => [
             'admin' => 'app\controllers\user\AdminController'
         ],

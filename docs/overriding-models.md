@@ -25,7 +25,7 @@ In order to make Yii2-user use your class you need to configure module as follow
 ```php
 ...
 'user' => [
-    'class' => 'dektrium\user\Module',
+    'class' => 'whc\user\Module',
     'modelMap' => [
         'User' => 'app\models\User',
     ],
@@ -41,7 +41,7 @@ Yii2-user allows you to attach behavior or event handler to any model. To do thi
 [
     ...
     'user' => [
-        'class' => 'dektrium\user\Module',
+        'class' => 'whc\user\Module',
         'modelMap' => [
             'User' => [
                 'class' => 'app\models\User',
