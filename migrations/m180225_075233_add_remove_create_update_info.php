@@ -12,8 +12,8 @@ class m180225_075233_add_remove_create_update_info extends Migration
      */
     public function safeUp()
     {
-        //$this->dropColumn('{{%user}}', 'created_at');
-        //$this->dropColumn('{{%user}}', 'updated_at');
+        $this->dropColumn('{{%user}}', 'created_at');
+        $this->dropColumn('{{%user}}', 'updated_at');
         $this->addColumn('{{%user}}', 'type', $this->integer()->notNull()->comment('نوع کاربر%USER_TYPE%'));
         $this->addColumn('{{%user}}', 'created_user_id', $this->integer());
         $this->addColumn('{{%user}}', 'modified_user_id', $this->integer());
