@@ -41,8 +41,8 @@ use yii\helpers\ArrayHelper;
  * @property string  $registration_ip
  * @property integer $confirmed_at
  * @property integer $blocked_at
- * @property integer $created_at
- * @property integer $updated_at
+ * @property integer $created_time
+ * @property integer $modified_time
  * @property integer $last_login_at
  * @property integer $flags
  *
@@ -192,7 +192,7 @@ class User extends ActiveRecord implements IdentityInterface
             'registration_ip'   => \Yii::t('user', 'Registration ip'),
             'unconfirmed_email' => \Yii::t('user', 'New email'),
             'password'          => \Yii::t('user', 'Password'),
-            'created_at'        => \Yii::t('user', 'Registration time'),
+            'created_time'        => \Yii::t('user', 'Registration time'),
             'last_login_at'     => \Yii::t('user', 'Last login'),
             'confirmed_at'      => \Yii::t('user', 'Confirmation time'),
         ];

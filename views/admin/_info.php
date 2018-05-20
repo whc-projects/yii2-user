@@ -20,7 +20,7 @@
 <table class="table">
     <tr>
         <td><strong><?= Yii::t('user', 'Registration time') ?>:</strong></td>
-        <td><?= Yii::t('user', '{0, date, MMMM dd, YYYY HH:mm}', [$user->created_at]) ?></td>
+        <td><?= Yii::t('user', '{0, date, MMMM dd, YYYY HH:mm}', [$user->created_time]) ?></td>
     </tr>
     <?php if ($user->registration_ip !== null): ?>
         <tr>

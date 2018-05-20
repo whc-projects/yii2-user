@@ -28,7 +28,7 @@ use yii\helpers\Url;
  * @property string  $data        Account properties returned by social network (json encoded)
  * @property string  $decodedData Json-decoded properties
  * @property string  $code
- * @property integer $created_at
+ * @property integer $created_time
  * @property string  $email
  * @property string  $username
  *

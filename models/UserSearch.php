@@ -31,7 +31,7 @@ class UserSearch extends Model
     public $email;
 
     /** @var int */
-    public $created_at;
+    public $created_time;
 
     /** @var int */
     public $last_login_at;
@@ -56,8 +56,8 @@ class UserSearch extends Model
     public function rules()
     {
         return [
-            'fieldsSafe' => [['id', 'username', 'email', 'registration_ip', 'created_at', 'last_login_at'], 'safe'],
-            'createdDefault' => ['created_at', 'default', 'value' => null],
+            'fieldsSafe' => [['id', 'username', 'email', 'registration_ip', 'created_time', 'last_login_at'], 'safe'],
+            'createdDefault' => ['created_time', 'default', 'value' => null],
             'lastloginDefault' => ['last_login_at', 'default', 'value' => null],
         ];
     }
@@ -69,7 +69,7 @@ class UserSearch extends Model
             'id'              => Yii::t('user', '#'),
             'username'        => Yii::t('user', 'Username'),
             'email'           => Yii::t('user', 'Email'),
-            'created_at'      => Yii::t('user', 'Registration time'),
+            'created_time'      => Yii::t('user', 'Registration time'),
             'last_login_at'   => Yii::t('user', 'Last login'),
             'registration_ip' => Yii::t('user', 'Registration ip'),
         ];
@@ -86,7 +86,7 @@ class UserSearch extends Model
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
-            'sort' => ['defaultOrder' => ['created_at' => SORT_DESC]],
+            'sort' => ['defaultOrder' => ['created_time' => SORT_DESC]],
         ]);
 
         if (!($this->load($params) && $this->validate())) {
@@ -96,9 +96,9 @@ class UserSearch extends Model
         $modelClass = $query->modelClass;
         $table_name = $modelClass::tableName();
 
-        if ($this->created_at !== null) {
-            $date = strtotime($this->created_at);
-            $query->andFilterWhere(['between', $table_name . '.created_at', $date, $date + 3600 * 24]);
+        if ($this->created_time !== null) {
+            $date = strtotime($this->created_time);
+            $query->andFilterWhere(['between', $table_name . '.created_time', $date, $date + 3600 * 24]);
         }
 
         $query->andFilterWhere(['like', $table_name . '.username', $this->username])

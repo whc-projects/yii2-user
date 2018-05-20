@@ -53,12 +53,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'format' => 'html',
         ],
         [
-            'attribute' => 'created_at',
+            'attribute' => 'created_time',
             'value' => function ($model) {
                 if (extension_loaded('intl')) {
-                    return Yii::t('user', '{0, date, MMMM dd, YYYY HH:mm}', [$model->created_at]);
+                    return Yii::t('user', '{0, date, MMMM dd, YYYY HH:mm}', [$model->created_time]);
                 } else {
-                    return date('Y-m-d G:i:s', $model->created_at);
+                    return date('Y-m-d G:i:s', $model->created_time);
                 }
             },
         ],

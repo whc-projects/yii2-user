@@ -21,7 +21,7 @@ use yii\helpers\Url;
  *
  * @property integer $user_id
  * @property string  $code
- * @property integer $created_at
+ * @property integer $created_time
  * @property integer $type
  * @property string  $url
  * @property bool    $isExpired
@@ -87,7 +87,7 @@ class Token extends ActiveRecord
                 throw new \RuntimeException();
         }
 
-        return ($this->created_at + $expirationTime) < time();
+        return ($this->created_time + $expirationTime) < time();
     }
 
     /** @inheritdoc */
@@ -95,7 +95,7 @@ class Token extends ActiveRecord
     {
         if ($insert) {
             static::deleteAll(['user_id' => $this->user_id, 'type' => $this->type]);
-            $this->setAttribute('created_at', time());
+            $this->setAttribute('created_time', time());
             $this->setAttribute('code', Yii::$app->security->generateRandomString());
         }
 
