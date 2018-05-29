@@ -12,7 +12,7 @@
 namespace whc\user\models;
 
 use whc\user\traits\ModuleTrait;
-use yii\db\ActiveRecord;
+use whc\common\components\ActiveRecord;
 
 /**
  * This is the model class for table "profile".
