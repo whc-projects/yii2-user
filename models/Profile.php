@@ -67,6 +67,8 @@ class Profile extends ActiveRecord
     {
         return [
             'bioString'            => ['bio', 'string'],
+            'mobileString'            => ['mobile', 'string'],
+            'phoneString'            => ['phone', 'string'],
             'timeZoneValidation'   => ['timezone', 'validateTimeZone'],
             'publicEmailPattern'   => ['public_email', 'email'],
             'gravatarEmailPattern' => ['gravatar_email', 'email'],
