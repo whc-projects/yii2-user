@@ -66,9 +66,10 @@ class Profile extends ActiveRecord
     public function rules()
     {
         return [
+            'userIdInteger'        => ['user_id', 'integer'],
             'bioString'            => ['bio', 'string'],
-            'mobileString'            => ['mobile', 'string'],
-            'phoneString'            => ['phone', 'string'],
+            'mobileString'         => ['mobile', 'string'],
+            'phoneString'          => ['phone', 'string'],
             'timeZoneValidation'   => ['timezone', 'validateTimeZone'],
             'publicEmailPattern'   => ['public_email', 'email'],
             'gravatarEmailPattern' => ['gravatar_email', 'email'],
