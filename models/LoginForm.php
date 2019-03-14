@@ -164,12 +164,14 @@ class LoginForm extends Model
     /** @inheritdoc */
     public function beforeValidate()
     {
-        if (parent::beforeValidate()) {
-            $this->user = $this->finder->findUserByUsernameOrEmail(trim($this->login));
-
-            return true;
-        } else {
-            return false;
+        if(basename($_SERVER['PHP_SELF']) !== 'yii')
+        {
+            if (parent::beforeValidate()) {
+                $this->user = $this->finder->findUserByUsernameOrEmail(trim($this->login));
+                return true;
+            } else {
+                return false;
+            }
         }
     }
 }
