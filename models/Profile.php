@@ -65,6 +65,7 @@ class Profile extends ActiveRecord
      */
     public function rules()
     {
+        
         return [
             'userIdInteger'        => ['user_id', 'integer'],
             'bioString'            => ['bio', 'string'],
