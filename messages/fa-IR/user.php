@@ -41,7 +41,7 @@ return array (
   'Rules' => '',
   'VKontakte' => '',
   'We have generated a password for you' => '',
-  'Your account has been blocked' => 'این حساب کاربری غیرفعال است، در صورت نیاز به راهبر سامانه مراجعه فرمایید.',
+  'Your account has been blocked.' => '',
   'Your account has been completely deleted' => '',
   'Your account on {0} has a new password' => '',
   'Your password on {0} has been changed' => '',
